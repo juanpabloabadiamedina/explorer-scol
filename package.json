@@ -1,8 +1,8 @@
 {
   "name": "eth-block-explorer",
-  "description": "A lightweight ethereum block explorer",
+  "description": "A lightweight Scolcoin block explorer",
   "version": "0.0.1",
-  "repository": "https://github.com/sthnaqvi/explorer",
+  "repository": "https://github.com/juanpabloabadiamedina/explorer-2",
   "license": "MIT",
   "private": false,
   "devDependencies": {
@@ -20,7 +20,7 @@
   "scripts": {
     "postinstall": "bower install",
     "prestart": "npm install",
-    "start": "http-webnode ./app -a localhost -p 8000 -c-1",
+    "start": "http-webnode ./app -a localhost -p 8001 -c-1",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js  --single-run",

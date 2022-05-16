@@ -1,6 +1,6 @@
-# ETH Block Explorer based off github.com/etherparty/explorer
+# SCOL Block Explorer based off github.com/etherparty/explorer
 
-![ETH Block Explorer Screenshot](https://i.imgur.com/8dPnAct.jpg)
+![SCOL Block Explorer Screenshot](https://i.imgur.com/8dPnAct.jpg)
 
 ## Demo
 
@@ -17,12 +17,20 @@ Discuss this project at: [Reddit Page on /r/ethreum](https://www.reddit.com/r/et
 
 ## Donations
 
-ETH Address: 0x1BDA9C6A37ECd91940df1E7559A8403ecE9806D1
+SCOL Address: T5bqbK3pcoybpovTXu3K7yDeLiaQbK4TvX
+SCOL SM Address: 0x2bb6ddf9752a896329e4211d8df0ab27f93e0ded
+
+## Dependencias:
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt install -y nodejs
+npm install -g npm 
+sudo npm install -g bower
+npm upgrade
 
 ## Installation
 
 ```
-git clone https://github.com/sthnaqvi/explorer
+git clone https://github.com/juanpabloabadiamedina/explorer-2
 npm install
 bower install
 npm start
@@ -52,4 +60,4 @@ Then visit http://localhost:8000 in your browser of choice after you npm start t
 - Realtime latest blocks and recent transactions
 - Other random blockchain info stats were added
 
-_If you want to disable auto refresh/auto new block show, just comment line no 13-22 at: [app/scripts/controllers/mainController.js](https://github.com/sthnaqvi/explorer/blob/3a08032fc8550a863ae49acf0bdd45bfe2d961d1/app/scripts/controllers/mainController.js#L13-L22)_
+_If you want to disable auto refresh/auto new block show, just comment line no 13-22 at: [app/scripts/controllers/mainController.js](https://github.com/juanpabloabadiamedina/explorer-2/blob/master/app/scripts/controllers/mainController.js)_
