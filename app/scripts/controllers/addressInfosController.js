@@ -32,7 +32,7 @@ angular.module('ethExplorer')
                     });
                 getTransactions()
                     .then(function (result) {
-                        console.log("getTransactions is executed!")
+                        console.log("getTransactions ¡es ejecutado!")
                         console.log(result)
                         $scope.transactions = result;
                     });

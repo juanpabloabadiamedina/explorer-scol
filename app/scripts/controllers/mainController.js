@@ -232,7 +232,7 @@ angular.module('filters', [])
             if (isNaN(txt)) return txt;
             var b = new BigNumber(txt);
             var w = web3.fromWei(b, "ether");
-            return w.toFixed(6) + " ETH";
+            return w.toFixed(6) + " SCOL";
         };
     })
     .filter('timestampAge', function () {
@@ -250,7 +250,7 @@ angular.module('filters', [])
                 var secsString = secs + " sec";
                 var minsString = mins + " min";
                 var hrsString = hrs + " hr";
-                var daysString = days + " day";
+                var daysString = days + " dia";
 
                 if (secs > 1)
                     secsString = secs + " secs";

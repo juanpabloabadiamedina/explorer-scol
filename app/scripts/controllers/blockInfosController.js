@@ -49,7 +49,7 @@ angular.module('ethExplorer')
                         $scope.firstBlock = false;
                         $scope.lastBlock = false;
                         if (!(!$scope.blockNumber)) {
-                            $scope.conf = number - $scope.blockNumber + " Confirmations";
+                            $scope.conf = number - $scope.blockNumber + " Confirmaciones";
                             if (number === $scope.blockNumber) {
                                 $scope.conf = 'Unconfirmed';
                                 $scope.lastBlock = true;
