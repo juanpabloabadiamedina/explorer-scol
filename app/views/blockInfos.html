@@ -10,53 +10,53 @@
           <a class="btn btn-primary btn-sm" ng-class="{disabled: lastBlock}" href="./#/block/{{blockNumber+1}}">Next &gt;</a>
         </div>
         <h2 style="margin-top: 30px;">
-          <i class="fa fa-cube"></i> Summary
-          <small>- information of block {{number}}</small>
+          <i class="fa fa-cube"></i> Resumen
+          <small>- informacion de bloque {{number}}</small>
         </h2>
         <table class="table table-striped">
             <tbody>
             <tr>
-                <td>Block Number</td>
+                <td>Número de bloque</td>
                 <td><a href="./#/block/{{blockNumber}}">{{number}}</a></td>
             </tr>
             <tr>
-                <td>Block Hash</td>
+                <td>Bloque Hash</td>
                 <td>{{ hash }}</td>
             </tr>
             <tr>
-                <td>Received Time</td>
+                <td>Hora Recibida</td>
                 <td>
                     {{timestamp}}
                 </td>
             </tr>
             <tr>
-              <td>Confirmations</td>
+              <td>Confirmaciones</td>
               <td><span style="color: #08d410; font-weight: bold;">{{conf}}</span></td>
             </tr>
             <tr>
-                <td>Difficulty</td>
+                <td>Dificultad</td>
                 <td>
                     {{difficulty}}
                 </td>
             </tr>
             <tr>
-                <td>Nonce</td>
+                <td>Mientras tanto</td>
                 <td>{{nonce}}</td>
             </tr>
             <tr>
-                <td>Size</td>
+                <td>Tamaño</td>
                 <td>{{size}} bytes</td>
             </tr>
             <tr>
-                <td>Miner</td>
+                <td>Minero</td>
                 <td><a href="./#/address/{{miner}}">{{miner}}</a></td>
             </tr>
             <tr>
-                <td>Gas Limit</td>
+                <td>límite de Gas</td>
                 <td>{{gasLimit}}</td>
             </tr>
             <tr>
-                <td>Gas Used</td>
+                <td>Gas Utilizado</td>
                 <td>{{gasUsed}}</td>
             </tr>
             <tr>
@@ -64,7 +64,7 @@
                 <td>{{ uncledata }}</td>
             </tr>
             <tr>
-                <td>State Root Hash</td>
+                <td>Root Hash</td>
                 <td>{{ rootHash }}</td>
             </tr>
             <tr>
@@ -72,22 +72,22 @@
                 <td>{{ parentHash }}</td>
             </tr>
             <tr>
-                <td>Data</td>
+                <td>Datos</td>
                 <td>{{extraData}}</td>
             </tr>
 
             <tr>
-                <td>Data (Translated)</td>
+                <td>Dato (Traducido)</td>
                 <td>{{dataFromHex}}</td>
             </tr>
 
             <tr>
-                <td>Number of Uncle Blocks</td>
+                <td>Número de Uncle Blocks</td>
                 <td>{{numberOfUncles}}</td>
             </tr>
 
             <tr>
-                <td>Number of Transactions</td>
+                <td>Número de Transacciones</td>
                 <td>{{numberOfTransactions}}</td>
             </tr>
 
@@ -96,30 +96,30 @@
     </div>
 
     <h2 style="margin-top: 30px;">
-      <i class="fa fa-exchange"></i> Transactions
-      <small>- contained in current block</small>
+      <i class="fa fa-exchange"></i> Transacciones
+      <small>- contenido en el bloque actual</small>
     </h2>
 
     <div ng-repeat="tx in transactions">
       <table class="table table-striped">
           <tbody>
           <tr>
-              <th colspan="2" style="text-align:left">Transaction #{{$index+1}}</th>
+              <th colspan="2" style="text-align:left">Transaccion #{{$index+1}}</th>
           </tr>
           <tr>
               <td>Hash #</td>
               <td><a href="./#/tx/{{tx.hash}}">{{tx.hash}}</a></td>
           </tr>
           <tr>
-              <td>From</td>
+              <td>De</td>
               <td><a href="./#/address/{{tx.from}}">{{tx.from}}</a></td>
           </tr>
           <tr>
-              <td>To</td>
+              <td>Para</td>
               <td><a href="./#/address/{{tx.to}}">{{tx.to}}</a></td>
           </tr>
           <tr>
-             <td>Contract Address</td>
+             <td>Dirección del Contrato</td>
              <td><a href="./#/address/{{tx.contractAddress}}">{{tx.contractAddress}}</a></td>
          </tr>
           <tr>
@@ -127,12 +127,12 @@
               <td>{{tx.gas}}</td>
           </tr>
           <tr>
-              <td>Input</td>
+              <td>Entrada</td>
               <td><textarea class="input-data-textarea" readonly>{{tx.input}}</textarea></td>
           </tr>
           <tr>
-              <td>Value</td>
-              <td>{{tx.value}} ETH</td>
+              <td>Valor</td>
+              <td>{{tx.value}} SCOL</td>
           </tr>
           </tbody>
       </table>

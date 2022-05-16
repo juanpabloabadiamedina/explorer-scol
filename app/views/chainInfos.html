@@ -1,58 +1,58 @@
 <div class="container" style="padding-top: 10px;">
 
-    <h1><i class="fa fa-server"></i> Ethereum Information
-        <small>View information about the Ethereum Blockchain</small>
+    <h1><i class="fa fa-server"></i> Scolcoin Smart Contract
+        <small>Ver información sobre Scolcoin Blockchain</small>
     </h1>
     <div id="chain" class="blockdiv">
         <table class="table table-striped">
             <tbody><tr>
-                <th colspan="2" style="text-align:left">Summary</th>
+                <th colspan="2" style="text-align:left">Resumen</th>
             </tr>
             <tr>
-                <td>Current Block</td>
+                <td>Bloque Actual</td>
                 <td><a href="./#/block/{{ blockNum }}">{{ blockNum }}</a></td>
             </tr>
             <tr>
-                <td>Block Time</td>
+                <td>Bloque Tiempo</td>
                 <td>
-                    {{ blocktime }} seconds since block <a href="./#/block/{{ blockNum - 1 }}">{{ blockNum - 1 }}</a><br>
+                    {{ blocktime }} Seg desde el Bloque <a href="./#/block/{{ blockNum - 1 }}">{{ blockNum - 1 }}</a><br>
                 </td>
             </tr>
             <tr>
-                <td>Block Time Averages</td>
+                <td>Promedios de tiempo de bloque</td>
                 <td><table style="width:100%"><tbody><tr><td>
-                    {{ blocktimeAverage1 }} seconds for the past 100 blocks<br>
-                    {{ blocktimeAverage2 }} seconds for the past 1,000 blocks
+                    {{ blocktimeAverage1 }} segundos de los últimos 100 bloques<br>
+                    {{ blocktimeAverage2 }} segundos de los últimos 1,000 bloques
                     </td><td>
-                    {{ blocktimeAverage3 }} seconds for the past 10,000 blocks<br>
-                    {{ blocktimeAverage4 }} seconds for the past 100,000 blocks
+                    {{ blocktimeAverage3 }} segundos de los últimos 10,000 bloques<br>
+                    {{ blocktimeAverage4 }} segundos de los últimos 100,000 bloques
                     </td></tr><tr><td>
-                    {{ blocktimeAverageAll }} seconds for all {{blockNum}} blocks
+                    {{ blocktimeAverageAll }} segundos para todos los {{blockNum}} bloques
                     </td></tr></tbody></table>
                 </td>
             </tr>
             <tr>
-                <td>Current Difficulty</td>
+                <td>Dificultad actual</td>
                 <td>{{ difficulty_formatted }}</td>
             </tr>
             <tr>
-                <td>Total Difficulty</td>
+                <td>Dificultad total</td>
                 <td>{{ totalDifficulty_formatted }}</td>
             </tr>
             <tr>
-                <td>Gas Limit</td>
+                <td>Limite Gas</td>
                 <td>{{ gasLimit }}</td>
             </tr>
             <tr>
-                <td>Time</td>
+                <td>Tiempo</td>
                 <td>{{ time }}</td>
             </tr>
             <tr>
-                <td>Connected to ETH Network</td>
+                <td>Conectado a la Red SCOL</td>
                 <td>{{ isConnected }}</td>
             </tr>
             <tr>
-                <td>API/Client Version</td>
+                <td>Versión API/Cliente</td>
                 <td>{{ versionApi }} - {{ versionClient }}</td>
             </tr>
           </tbody>

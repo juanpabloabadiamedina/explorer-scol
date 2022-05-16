@@ -1,7 +1,7 @@
 <div class="container" style="padding-top:5px;">
 
-    <h1><i class="fa fa-exchange"></i> Transaction
-        <small>View information about an Ethereum transaction</small>
+    <h1><i class="fa fa-exchange"></i> Transacción
+        <small>Ver información sobre una transacción de Scolcoin</small>
     </h1>
 
     <div id="tx-97785883" class="txdiv">
@@ -22,7 +22,7 @@
                 <td style="text-align:center;vertical-align:middle;">
                     <a href="./#/address/{{to}}">{{to}}</a>
                     <span class="pull-right">
-                        <span>{{ethValue}} ETH</span>
+                        <span>{{ethValue}} SCOL</span>
                     </span>
                     <br>
                 </td>
@@ -31,52 +31,52 @@
         </table>
       </div>
         <div style="padding-bottom:30px;width:100%;text-align:right;clear:both">   <!--TODO no style tags...-->
-            <button class="btn btn-primary">{{conf}} Confirmations</button>
-            <button class="btn btn-success cb"><span>{{ethValue}} ETH</span></button>
+            <button class="btn btn-primary">{{conf}} Confirmaciones</button>
+            <button class="btn btn-success cb"><span>{{ethValue}} SCOL</span></button>
         </div>
         <div class="table-responsive">
         <table class="table table-striped">
             <tbody><tr>
-                <th colspan="2" style="text-align:left">Summary</th>
+                <th colspan="2" style="text-align:left">Resumen</th>
             </tr>
             <tr>
                 <td>Block Hash</td>
                 <td><a href="./#/block/{{blockHash}}">{{blockHash}}</a></td>
             </tr>
             <tr>
-                <td>Received Time</td>
+                <td>Hora recibida</td>
                 <td>
                     {{time * 1000 | date:'medium'}}
                 </td>
             </tr>
             <tr>
-                <td>Included In Block</td>
+                <td>Incluido en bloque</td>
                 <td>
                     <a href="./#/block/{{blockNumber}}"><button class="btn btn-sm btn-primary">{{blockNumber}}</button></a>
                 </td>
             </tr>
             <tr>
-                <td>Gas Used</td>
+                <td>Gas Usado</td>
                 <td>{{gas | gasFormat}}</td>
             </tr>
             <tr>
-                <td>Gas Price</td>
+                <td>Precio Gas</td>
                 <td>{{gasPrice}}</td>
             </tr>
             <tr>
-                <td>Transaction Confirmations</td>
+                <td>Confirmaciones de transacciones</td>
                 <td><span style="color: #08d410; font-weight: bold;">{{conf}}</span></td>
             </tr>
             <tr>
-                <td>Number of transactions made by the sender prior to this one</td>
+                <td>Número de transacciones realizadas por el remitente con anterioridad a esta</td>
                 <td>{{nonce}}</td>
             </tr>
             <tr>
-                <td>Transaction price</td>
+                <td>Precio de transacción</td>
                 <td>{{txprice}}</td>
             </tr>
             <tr>
-                <td>Data</td>
+                <td>Datos</td>
                 <td><textarea class="input-data-textarea" readonly>{{input}}</textarea></td>
             </tr>
 
