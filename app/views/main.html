@@ -27,9 +27,10 @@
       <div class="col-md-2" align="center">
           <div class="boxi">Diferencia Actual:<br/>{{ difficulty || "Loading.." | diffFormat }}</div>
       </div>
+    <!-- <div class="col-md-2" align="center">
       <div class="col-md-2" align="center">
           <div class="boxi">Hashrate:<br/>{{ hashrate|| "Loading.." | hashFormat }}</div>
-      </div>
+      </div> -->
   </div>
   <h1><i class="fa fa-cubes"></i> Bloques Recientes <small>Bloques más recientes en la red Scolcoin</small></h1><br />
   <div class="table-responsive">
@@ -80,7 +81,9 @@
         </tbody>
     </table>
   </div>
-    <h1><i class="fa fa-exchange"></i> Transacciones Recientes <small>Transacciones en la Red Scolcoin Smart Contract</small></h1><br />
+
+  <!-- TODO: Fix up recent transactions -->
+    <!-- <h1><i class="fa fa-exchange"></i> Recent Transactions <small>Transactions in the Scolcoin Network</small></h1><br />
     <div class="table-responsive">
     <table class="table table-striped table-hover table-bordered">
         <thead class="thead-inverse">
