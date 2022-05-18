@@ -28,18 +28,18 @@ angular
             if (!!result.blockHash) {
               $scope.blockHash = result.blockHash;
             } else {
-              $scope.blockHash = "pending";
+              $scope.blockHash = "pendiente";
             }
             if (!!result.blockNumber) {
               $scope.blockNumber = result.blockNumber;
             } else {
-              $scope.blockNumber = "pending";
+              $scope.blockNumber = "pendiente";
             }
             $scope.from = result.from;
             $scope.gas = result.gas;
             //$scope.gasPrice = result.gasPrice.c[0] + " WEI";
             $scope.gasPrice =
-              web3.fromWei(result.gasPrice, "ether").toFormat(10) + " ETH";
+              web3.fromWei(result.gasPrice, "ether").toFormat(10) + " SCOL";
             $scope.hash = result.hash;
             $scope.nonce = result.nonce;
 
@@ -51,7 +51,7 @@ angular
             //$scope.ethValue = web3.fromWei(result.value[0], "ether"); Newer method but has ""
             $scope.ethValue = result.value.c[0] / 10000;
             $scope.txprice =
-              web3.fromWei(result.gas * result.gasPrice, "ether") + " ETH";
+              web3.fromWei(result.gas * result.gasPrice, "ether") + " SCOL";
             if (!!$scope.blockNumber) {
               $scope.conf = number - $scope.blockNumber;
               if ($scope.conf === 0) {
