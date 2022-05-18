@@ -35,7 +35,7 @@ body {
 }
 
 .navbar-dark {
-    background-color: #293640;
+    background-color: #FC8809;
     color: #FFF;
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 input.searchi {
-    background-color: #293640 !important;
+    background-color: #FC8809 !important;
     border: 2px solid #384a58;
     color: #fff;
     width: 100% !important;
@@ -65,7 +65,7 @@ input.searchi {
 
 input.searchimain {
     height: 50px;
-    background-color: #293640 !important;
+    background-color: #FC8809 !important;
     border: 2px solid #384a58;
     color: #fff;
     width: 100%;
@@ -78,7 +78,7 @@ input.searchimain {
 }
 
 .boxi {
-    background-color: #104050;
+    background-color: #104050; //azul caja 
     color: #FFF;
     font-size: 18px;
     font-weight: lighter;
@@ -88,7 +88,7 @@ input.searchimain {
 }
 
 .thead-inverse {
-    background-color: #293640;
+    background-color: #FC8809;
     color: #FFF;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -99,25 +99,25 @@ input.searchimain {
 }
 
 .btn-blue {
-    background-color: #293640 !important;
+    background-color: #FC8809 !important;
     border-color: #384a58 !important;
     color: #FFF !important;
 }
 
 .btn-blue.focus, .btn-blue:focus {
-    background-color: #293640;
+    background-color: #FC8809;
     border-color: #384a58;
     color: #FFF;
 }
 
 .btn-blue:hover {
-    background-color: #293640;
+    background-color: #FC8809;
     border-color: #384a58;
     color: #FFF;
 }
 
 .btn-bluem {
-    background-color: #293640 !important;
+    background-color: #FC8809 !important;
     border-color: #384a58 !important;
     color: #FFF !important;
     height: 50px !important;
