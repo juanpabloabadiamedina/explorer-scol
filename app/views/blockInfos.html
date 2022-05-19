@@ -1,11 +1,11 @@
 <div class="container" style="padding-top: 10px;">
 
-    <div class="boxi" style="clear:both;">View information about Ethereum <i class="fa fa-cube"></i> Block {{number}}</div>
+    <div class="boxi" style="clear:both;">información Scolcoin<i class="fa fa-cube"></i> Block {{number}}</div>
 
     <div id="block" class="blockdiv">
         <div style="padding-bottom:30px;width:100%;text-align:right;clear:both">
           <button class="btn btn-primary">{{conf}}</button>
-          <button class="btn btn-success cb"><span>{{gasUsed}} Gas Used</span></button>
+          <button class="btn btn-success cb"><span>{{gasUsed}} Gas Usado</span></button>
           <a class="btn btn-primary btn-sm" ng-class="{disabled:firstBlock}" href="./#/block/{{blockNumber-1}}">&lt; Prev</a>
           <a class="btn btn-primary btn-sm" ng-class="{disabled: lastBlock}" href="./#/block/{{blockNumber+1}}">Next &gt;</a>
         </div>
