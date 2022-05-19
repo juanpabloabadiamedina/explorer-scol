@@ -16,7 +16,7 @@
           <div class="boxi">Bloque actual:<br/>{{ currentBlockNumber }}</div>
       </div>
       <div class="col-md-2" align="center">
-          <div class="boxi">SCOL/USD Price:<br/>{{ ethprice || "Loading.." }}</div>
+          <div class="boxi">SCOL/COP:<br/>{{ ethprice || "Loading.." }}</div>
       </div>
       <div class="col-md-2" align="center">
           <div class="boxi">límite de gas:<br/>{{ gasLimit || "Loading.." }}</div>
@@ -25,12 +25,12 @@
           <div class="boxi">Tiempo Bloque:<br/>{{ blocktime?blocktime+" second(s)":false || "Loading.." }}</div>
       </div>
       <div class="col-md-2" align="center">
-          <div class="boxi">Diferencia Actual:<br/>{{ difficulty || "Loading.." | diffFormat }}</div>
+          <div class="boxi">Diferencia:<br/>{{ difficulty || "Loading.." | diffFormat }}</div>
       </div>
-    <!-- <div class="col-md-2" align="center">
+     <div class="col-md-2" align="center">
       <div class="col-md-2" align="center">
-          <div class="boxi">Hashrate:<br/>{{ hashrate|| "Loading.." | hashFormat }}</div>
-      </div> -->
+          <div class="boxi">Web<br/>scolcoin.com</div>
+      </div> 
   </div>
   <h1><i class="fa fa-cubes"></i> Bloques Recientes <small>Bloques más recientes en la red Scolcoin</small></h1><br />
   <div class="table-responsive">
